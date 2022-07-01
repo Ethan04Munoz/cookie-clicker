@@ -43,9 +43,10 @@ body, html {
 }
 
 #imagenGalleta{
-    width: 10rem;
+    width: 20rem;
 }
 
 .imgSmall{
-    width: 1rem;
+    width: 4rem;
+    position: absolute;
 }
