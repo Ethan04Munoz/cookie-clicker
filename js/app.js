@@ -43,21 +43,22 @@
             let rightOrleft = Math.ceil(Math.random()*(3-1)+1); //Creamos un numero aleatorio entre 2 y 3
                                                                 //Dependiendo del numero entra al if o al else
                                                                 //y así crea las posiciones aleatorias
+            console.log(rightOrleft);
             if (rightOrleft == 2){ //2 es derecha
-                let posv = Math.ceil(Math.random() * (20+30) - 30);
-                var posvString = posv + 'px';
+                let posv = Math.ceil(Math.random() * (5-3) + 3);
+                var posvString = "-" + posv + 'rem';
                 galletaAnimacion.style.marginLeft = posvString;
-                let posH = Math.ceil(Math.random() * (150-30) + 30);
-                var posHString = posH + 'px';
+                let posH = Math.ceil(Math.random() * (8-3) + 3);
+                var posHString = posH + 'rem';
 
                 //Una vez creadas las posiciones random de horizontal y vertical las modifica en los estilos
                 galletaAnimacion.style.marginTop = posHString;
             }else{ //3 es izquierda
-                let posv = Math.ceil(Math.random() * (400-300) + 300);
-                var posvString = "-" + posv + 'px';
+                let posv = Math.ceil(Math.random() * (16-6) + 6);
+                var posvString = "-" + posv + 'rem';
                 galletaAnimacion.style.marginLeft = posvString;
-                let posH = Math.ceil(Math.random() * (150-30) + 30);
-                var posHString = posH + 'px';
+                let posH = Math.ceil(Math.random() * (8-3) + 3);
+                var posHString = posH + 'rem';
 
                 //Una vez creadas las posiciones random de horizontal y vertical las modifica en los estilos
                 galletaAnimacion.style.marginTop = posHString;
