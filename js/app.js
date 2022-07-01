@@ -1,16 +1,29 @@
 //Variables globales
     const imagenGalleta = document.querySelector("#imagenGalleta");
     const puntajeMostrador = document.querySelector("#puntajeMostrador");
+    const recordPuntaje = document.querySelector("#recordpuntaje");
     const cajaGOD = document.querySelector("#cajaGOD"); //Obtenemos la caja semitrasparente que almacena 
                                                         //todo el contenido de la página
     let conteoGalletas = 0; //Almacenara el puntaje
+    let record = 0;
 
 //Funciones
+
+    //Esta funcion obtiene el record de el localStorage
+    function updateRecord(){
+        recordPuntaje.textContent = "Record: " + localStorage.getItem("record");
+    }
 
     //Esta funcion aumenta las galletas y actualiza el puntaje
     function aumentarGalletas(){
         conteoGalletas = conteoGalletas + 1;
         puntajeMostrador.textContent = "Puntaje: " + conteoGalletas;
+        record = localStorage.getItem("record");
+        if(conteoGalletas > record){
+            record = conteoGalletas;
+            localStorage.setItem("record", record);
+            updateRecord();
+        }
         creacionGalletaPequeña(); //Invocamos una funcion que creará la animación de la galleta
     }
 
@@ -62,3 +75,5 @@
 
 //Eventos
 imagenGalleta.addEventListener("click", aumentarGalletas); //Al hacer click en la imagen de galleta llama a la funcion de aumentar galletas
+document.addEventListener("DOMContentLoaded", updateRecord);
+
