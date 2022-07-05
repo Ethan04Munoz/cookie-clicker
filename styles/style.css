@@ -59,6 +59,29 @@ h3{
     font-size: 2em;
 }
 
+
+.divLogosF{
+    width: 5%;
+    margin-left: 47.5%;
+    background: #ffffff00;
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+}
+
+.divLogosF:hover{
+    -webkit-transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    -ms-transform:scale(1.3);
+    -o-transform:scale(1.3);
+    transform:scale(1.3);
+}
+
+.imgLogosF{
+    width: 100%;
+}
+
 @media only screen and (max-width: 482px) {
     #imagenGalleta{
         width: 15rem;

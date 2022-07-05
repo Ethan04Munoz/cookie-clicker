@@ -1,4 +1,5 @@
 //Variables globales
+    const imgLogosF = document.querySelector("#imgLogosF");
     const imagenGalleta = document.querySelector("#imagenGalleta");
     const puntajeMostrador = document.querySelector("#puntajeMostrador");
     const recordPuntaje = document.querySelector("#recordpuntaje");
@@ -11,7 +12,12 @@
 
     //Esta funcion obtiene el record de el localStorage
     function updateRecord(){
-        recordPuntaje.textContent = "Record: " + localStorage.getItem("record");
+        let recordTemporal = localStorage.getItem("record");
+        if(recordTemporal===undefined || recordTemporal===null){
+            recordPuntaje.textContent = "Record: 0";
+        }else{
+            recordPuntaje.textContent = "Record: " + recordTemporal;
+        }
     }
 
     //Esta funcion aumenta las galletas y actualiza el puntaje
@@ -48,7 +54,7 @@
                 let posv = Math.ceil(Math.random() * (5-3) + 3);
                 var posvString = "-" + posv + 'rem';
                 galletaAnimacion.style.marginLeft = posvString;
-                let posH = Math.ceil(Math.random() * (8-3) + 3);
+                let posH = Math.ceil(Math.random() * (21-3) + 3);
                 var posHString = posH + 'rem';
 
                 //Una vez creadas las posiciones random de horizontal y vertical las modifica en los estilos
@@ -57,7 +63,7 @@
                 let posv = Math.ceil(Math.random() * (16-6) + 6);
                 var posvString = "-" + posv + 'rem';
                 galletaAnimacion.style.marginLeft = posvString;
-                let posH = Math.ceil(Math.random() * (8-3) + 3);
+                let posH = Math.ceil(Math.random() * (21-3) + 3);
                 var posHString = posH + 'rem';
 
                 //Una vez creadas las posiciones random de horizontal y vertical las modifica en los estilos
@@ -68,7 +74,7 @@
 
     //Esta funcion añade la galleta al HTML y después de 500 milisegundos la borra
     function addAndDeleteToHTML(galletaAnimacion){
-        cajaGOD.appendChild(galletaAnimacion);
+        recordPuntaje.appendChild(galletaAnimacion);
         setTimeout(function(){
                 galletaAnimacion.remove();
         }, 500);
