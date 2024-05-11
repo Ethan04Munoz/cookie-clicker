@@ -1,4 +1,5 @@
-![imagen](https://github.com/Ethan04Munoz/cookie-clicker/assets/67711002/c699f8fa-d59c-4d45-b132-f0a040023291)
+![imagen](https://github.com/Ethan04Munoz/cookie-clicker/assets/67711002/7e3c569c-a7bd-42a1-990d-3e9970eea9ce)
+
 
 Cookie Clicker Vanilla
 
