@@ -28,6 +28,9 @@ Tecnologías Utilizadas
 No se requiere instalación. Simplemente clona este repositorio y abre el archivo index.html en tu navegador para empezar a jugar.
 
 git clone https://github.com/tu-usuario/cookie-clicker-vanilla.git
+
 cd cookie-clicker-vanilla
+
 open index.html
+
 
