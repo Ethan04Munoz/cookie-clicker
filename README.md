@@ -8,15 +8,13 @@ Características
 
     Interfaz Sencilla: Diseño limpio y responsivo que se adapta a diferentes tamaños de pantalla.
     Contador de Cookies: Haz click en la cookie gigante para ganar cookies cada vez que clickeas.
-    Mejoras y Potenciadores: Usa tus cookies para comprar mejoras que incrementen tu producción de cookies.
     Almacenamiento Local: El progreso del juego se guarda automáticamente usando localStorage, permitiendo a los jugadores cerrar el navegador y continuar más tarde sin perder su avance.
 
 Cómo Jugar
 
     Abre el archivo index.html en tu navegador para empezar a jugar.
     Haz clic en la cookie grande para ganar cookies.
-    Usa las cookies ganadas para comprar mejoras desde el menú de mejoras.
-    Tus cookies y mejoras se guardarán automáticamente.
+    Tus cookies se guardarán automáticamente.
 
 Tecnologías Utilizadas
 
